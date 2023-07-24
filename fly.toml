@@ -15,4 +15,4 @@ primary_region = "syd"
   processes = ["app"]
 
 [build]
-  image = "flyio/hellofly:latest"
+  image = "flyio/app:latest"
