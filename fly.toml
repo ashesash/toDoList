@@ -1,10 +1,13 @@
-# fly.toml app configuration file generated for patient-cherry-7443 on 2023-07-24T23:36:23+10:00
+# fly.toml app configuration file generated for lively-forest-6097 on 2023-07-31T14:27:34+10:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "patient-cherry-7443"
+app = "lively-forest-6097"
 primary_region = "syd"
+
+[build]
+  image = "flyio/hellofly:latest"
 
 [http_service]
   internal_port = 8080
@@ -13,6 +16,3 @@ primary_region = "syd"
   auto_start_machines = true
   min_machines_running = 0
   processes = ["app"]
-
-[build]
-  image = "flyio/app:latest"
