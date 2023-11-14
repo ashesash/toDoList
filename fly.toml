@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for lively-forest-6097 on 2023-07-31T14:27:34+10:00
+# fly.toml app configuration file generated for lively-forest-6097 on 2023-11-11T22:11:17+11:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -7,7 +7,7 @@ app = "lively-forest-6097"
 primary_region = "syd"
 
 [build]
-  image = "flyio/hellofly:latest"
+  builder = "paketobuildpacks/builder:base"
 
 [http_service]
   internal_port = 8080
